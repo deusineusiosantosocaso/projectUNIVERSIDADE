@@ -1,0 +1,151 @@
+.Header{
+    width: 100%;
+    transition: all ease .3s;
+}
+
+.Header.aberto{
+    width: calc(100% - 15%);
+    transition: all ease .3s;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+.sidebar-modern {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    background: #22c55e;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 2px solid #1a1f37;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+
+.stat-box .number {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.stat-box .label {
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.menu-item {
+    margin-bottom: 0.5rem;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    color: #94a3b8;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-header:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.menu-header.active {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.menu-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-arrow {
+    transition: transform 0.3s ease;
+}
+
+.menu-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.submenu.expanded {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem 0.8rem 3rem;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submenu-item:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding-left: 3.5rem;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* conteudo */
+
+.content-area{
+    width: 100%;
+    height: 100vh;
+    transition: all ease .3s;
+    padding: 10px;
+}
+
+.content-area.aberto{
+    width: calc(100% - 15%);
+    transition: all ease .3s;
+}
